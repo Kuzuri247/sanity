@@ -70,7 +70,7 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage: `url(/center.jpg)`,
+        backgroundImage: `url(/optcenter.jpeg)`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
@@ -82,36 +82,36 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-6xl px-4 pt-[200px]">
       <ParallaxImg
-        src="/parallax5.jpg"
-        alt="And example of a space launch"
+        src="/para1.jpeg"
+        alt="esports image"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="/parallax1.jpg"
-        alt="And example of a space launch"
+        src="/para2.jpeg"
+        alt="esports image"
         start={-200}
         end={200}
         className="w-1/4"
       />
       <ParallaxImg
-        src="/parallax2.jpg"
-        alt="An example of a space launch"
+        src="/para5.jpeg"
+        alt="esports image"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="/parallax3.jpg"
-        alt="Orbiting satellite"
+        src="/para4.jpeg"
+        alt="esports image"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="/parallax4.jpg"
-        alt="Orbiting satellite"
+        src="/para3.jpeg"
+        alt="esports image"
         start={0}
         end={-500}
         className="ml-24 w-5/12"

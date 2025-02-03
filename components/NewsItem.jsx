@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MoveUpRight } from "lucide-react";
 
 const NewsItem = ({ title, description, url, urlToImage }) => {
   return (
-    <div className="flex flex-col justify-between rounded-lg bg-gray-800 pb-4 cursor-pointer group relative transition-all">
+    <div className="flex flex-col justify-between rounded-lg bg-black pb-4 cursor-pointer group relative transition-all">
       <div className="h-full w-full">
         <Image
           src={urlToImage}
@@ -15,7 +16,7 @@ const NewsItem = ({ title, description, url, urlToImage }) => {
         />
       </div>
 
-      <div className="text-md font-bold text-white p-4 ">{title}</div>
+      <div className="text-md font-bold text-slate-200 p-4 ">{title}</div>
 
       <div>
         <p className="text-sm text-gray-400 px-4">{description}</p>
@@ -23,12 +24,15 @@ const NewsItem = ({ title, description, url, urlToImage }) => {
 
       <div className="hidden group-hover:flex transition-all flex-col p-[10px] justify-center items-center bg-[rgba(0,0,0,0.95)] h-full w-full absolute top-0">
         <Link
-          className="bg-white text-black font-semibold hover:bg-tertiary transition-all text-[15px] px-4 py-2"
+          className="bg-black text-white font-semibold hover:bg-tertiary transition-all text-[15px] px-2 py-2 border border-slate-700 rounded-lg"
           href={url}
           target="_blank"
           aria-label="read-article"
         >
-          Read Article
+          <div className="flex items-center">
+            <span className=" px-2 ">Read Article</span>
+            <MoveUpRight />
+          </div>
         </Link>
       </div>
     </div>
